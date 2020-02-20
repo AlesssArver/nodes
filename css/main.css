@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: sans-serif;
+  background: #2e54e8;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 1fr 50px;
+      grid-template-columns: 50px 1fr 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  margin: auto;
+  padding: 10px;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.input {
+  padding: 15px 20px;
+  border-radius: 20px;
+  border: none;
+  -webkit-box-shadow: 0 0 5px 1px lightgray;
+          box-shadow: 0 0 5px 1px lightgray;
+}
+
+.node {
+  margin: 20px auto;
+}
+
+.search_input {
+  width: 100%;
+}
+
+.node {
+  margin: 50px 0;
+  position: relative;
+  padding: 15px 60px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 10px 1px lightgray;
+          box-shadow: 0 0 10px 1px lightgray;
+  overflow: hidden;
+}
+
+.node_text-input {
+  display: none;
+}
+
+.add_node-input {
+  border-radius: 20px 0 0 20px;
+}
+
+.add_node-btn {
+  padding: 15px 10px;
+  background: #fff;
+  border-radius: 0 20px 20px 0;
+  border: none;
+  -webkit-box-shadow: 0 0 5px 1px lightgray;
+          box-shadow: 0 0 5px 1px lightgray;
+  font-weight: bold;
+  color: #1c1c1c;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.add_node-btn:hover {
+  background: #74eb67;
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px 1px #74eb67;
+          box-shadow: 0 0 5px 1px #74eb67;
+}
+
+.node_delete {
+  width: 40px;
+  height: 100%;
+  background: #ee4343;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.node_delete:hover {
+  -webkit-box-shadow: 0 0 0px 10px #ee4343;
+          box-shadow: 0 0 0px 10px #ee4343;
+}

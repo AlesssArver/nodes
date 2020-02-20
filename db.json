@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "text": "Go to store"
+    },
+    {
+      "id": 3,
+      "text": "vrfgv"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
